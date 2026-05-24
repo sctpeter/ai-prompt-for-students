@@ -4,6 +4,8 @@
 
 ### Claude desktop
 
+> 使用方式，复制相应文件，然后重命名为CLAUDE.md到相应的文件夹中
+
 **exercises(claude_desktop).md**用于完成题目，但是自己没有掌握好相应知识时。
 
 **course_auto(claude_desktop).md**用于在用户提供课程语音稿与PPT，然后希望用AI当补课老师时。
@@ -21,6 +23,12 @@
 缺点: 需要自己对比语音稿与PPT，对照麻烦，并且语音稿有时候可读性不是很高。
 
 评价:如果用户对课程内容比较熟悉，仅仅是希望提意见问题，可以用这个提示词。
+
+推荐的claude系统提示词是(系统提示词是在UI中放进去的，每次claude对话前都会看，而CLAUDE.md不会自动被claude Desktop阅读，需要我们引导)
+
+```
+If i ask you about a file, but you couldn't find it, you should load tools, and read in my directory(/Users/nickname/Desktop/claude_home). If this is a Desktop app, and if claude is teaching user about the course, claude need to read the original course files before every reply.
+```
 
 ### 设计思路
 
